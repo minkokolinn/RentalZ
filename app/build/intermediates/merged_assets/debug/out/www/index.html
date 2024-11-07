@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "js/jquery.mobile-1.4.5.min.css">
+    <link rel = "stylesheet" href = "maincss.css">
+    <script src = "js/jquery-2.2.4.min.js"></script>
+    <script src = "js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/myjs.js"></script>
+
+    <title> RentalZ App </title>
+
+</head>
+
+<body>
+<div data-role="page" id="bgcolor" data-position="fixed">
+    <center>
+        <div data-role="content">
+            <img src="img/loginscreen.png" alt="" class="logologin">
+            <h1>RentalZ</h1>
+            <h3 style="color:white; font-style:italic;">" Find out your best place here! "</h3>
+            <form id="loginregion">
+                <p style="color:white;">Use as:</p>
+                <label>
+                    <input type="radio" name="useas" id="searcher" value="Searcher"/>
+                    Searcher
+                </label>
+
+                <label>
+                    <input type="radio" name="useas" id="reporter" value="Reporter"/>
+                    Reporter
+                </label>
+<!--                <a href="#" onclick="window.open('https://www.google.com/maps/place/Shwedagon+Pagoda/@16.7985897,96.1473162,17z/data=!3m1!4b1!4m5!3m4!1s0x30c1eb5e3fffe455:0xb7d3ad319654cf6e!8m2!3d16.7985846!4d96.1495049', '_system'); return false;">facebook</a>-->
+                <br>
+                <input type="button" value="Start" onclick="saveUserRole()">
+            </form>
+
+        </div>
+    </center>
+</div>
+</body>
+</html>
+

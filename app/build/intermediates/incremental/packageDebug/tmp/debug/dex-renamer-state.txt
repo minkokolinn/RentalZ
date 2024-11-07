@@ -1,0 +1,4 @@
+#Sun Jan 16 00:35:31 MMT 2022
+base.0=D\:\\UOG\\Mobile\\Coursework and Logbook\\RentalZ_Hybrid_MinKoKoLinn_001176410\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

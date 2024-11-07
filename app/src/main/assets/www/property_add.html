@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "js/jquery.mobile-1.4.5.min.css">
+    <link rel = "stylesheet" href = "maincss.css">
+    <script src = "js/jquery-2.2.4.min.js"></script>
+    <script src = "js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/myjs.js"></script>
+
+    <title> RentalZ App </title>
+
+</head>
+
+<body>
+
+<div data-role="page" id="pageone">
+    <div data-role="header" id="bgcolor">
+        <a href="property_home.html" data-role='button' data-icon='carat-l'>Back</a>
+        <h1>Upload a new property to rent</h1>
+    </div>
+    <script>
+        autoDisplayDateTime();
+    </script>
+    <div data-role="content">
+
+        <form>
+            <input type="hidden" id="pid" value=""/>
+
+            <label for="ptype">Property Type </label>
+            <select name="" id="ptype" required>
+                <option value="Flat">Flat</option>
+                <option value="House">House</option>
+                <option value="Bungalow">Bungalow</option>
+                <option value="Comdo">Comdo</option>
+            </select>
+
+            <label for="pbedroom">Number of bedrooms </label>
+            <input type="number" id="pbedroom" required/>
+
+            <label for="pdatetime">Uploaded date and time:</label>
+<!--            <input type="datetime-local" id="pdatetime" required>-->
+            <input type="text" id="pdatetime" value="" readonly required>
+
+            <label for="pprice">Monthly Rent Price (MMK)</label>
+            <input type="number" id="pprice" required/>
+
+            <label for="pftype">Furniture type</label>
+            <select name="" id="pftype">
+                <option value="">Not Selected</option>
+                <option value="Unfurnished">Unfurnished</option>
+                <option value="Part Furnished">Part Furnished</option>
+                <option value="Furnished">Furnished</option>
+            </select>
+
+            <label for="paddress">Address</label>
+            <input type="text" id="paddress" required/>
+
+            <label for="pnote">Note (Optional)</label>
+            <textarea name="" id="pnote" cols="30" rows="10">
+
+            </textarea>
+
+            <label for="prepname">Name of the reporter</label>
+            <input type="text" id="prepname" required/>
+
+            <label for="prepphone">Phone of the reporter</label>
+            <input type="number" id="prepphone" required/>
+
+            <table width="100%">
+                <tr><td>
+<!--                    <input type="reset" value="Clear" onclick=""/>-->
+                    <a data-role="button" onclick="clearFields()" style="background-color:#0A95FF; color:white;">Clear</a>
+                </td><td>
+<!--                    <input type="button" value="Upload" onclick="confirmProperty()"/>-->
+                    <a data-role="button" onclick="confirmProperty()" style="background-color:#0A95FF; color:white;">Upload</a>
+                </td></tr>
+            </table>
+
+        </form>
+
+    </div>
+
+    <div data-role="footer" data-position="fixed" data-theme="b">
+
+    </div>
+
+</div>
+
+</body>
+</html>

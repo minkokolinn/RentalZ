@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "js/jquery.mobile-1.4.5.min.css">
+    <link rel = "stylesheet" href = "maincss.css">
+    <script src = "js/jquery-2.2.4.min.js"></script>
+    <script src = "js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/myjs.js"></script>
+
+    <title> Phone Contact App </title>
+
+</head>
+<script>
+checkRoleInHome();
+</script>
+<style>
+    .circle {
+
+    }
+
+</style>
+
+<body>
+
+<div data-role="page" id="pageone" data-position="fixed">
+    <div data-role="panel" id="navpanel" data-theme="a"
+         data-display="overlay" data-position="left">
+        <div data-role="controlgroup" data-corners="false" >
+            <a href="#" data-role="button" onclick="clickedAll()">All</a>
+            <a href="#" data-role="button" onclick="clickedFlat()">Flat</a>
+            <a href="#" data-role="button" onclick="clickedHouse()">House</a>
+            <a href="#" data-role="button" onclick="clickedBungalow()">Bungalow</a>
+            <a href="#" data-role="button" onclick="clickedComdo()">Comdo</a>
+            <a href="" data-role="button" onclick="exit()">Exit</a>
+        </div>
+    </div>
+
+    <div data-role="header" id="bgcolor">
+        <h1>RentalZ</h1>
+        <a href="#navpanel" data-icon="bars" class="ui-btn-right">Menu</a>
+    </div>
+
+    <div data-role="content">
+        <script>
+            successDB();
+        </script>
+        <form>
+            <input type="text" id="searchtext" placeholder="Search......." onkeyup="searchPropertyDB()" onkeydown="searchPropertyDB()"/>
+            <a href="search_filter.html"><input type="button" value="Search Filter"/></a>
+
+        </form>
+        <div id="contactInfo">
+
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul id="footerDiv">
+                <li><a href="property_add.html" data-role="button" data-icon="plus" style="background-color:#0A95FF; color:white;">Upload new property</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href = "js/jquery.mobile-1.4.5.min.css">
+    <link rel = "stylesheet" href = "maincss.css">
+    <script src = "js/jquery-2.2.4.min.js"></script>
+    <script src = "js/jquery.mobile-1.4.5.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/myjs.js"></script>
+
+    <title> Phone Contact App </title>
+
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+    <div data-role="header" id="bgcolor">
+        <a href="" data-role='button' data-icon='carat-l' onclick="backToHome()">Back</a>
+        <h1 id="detailTitle"></h1>
+    </div>
+
+    <div data-role="content">
+        <script>runDetailProperty();</script>
+        <!--        <center><div id="char1" style='width: 60px; height:60px; padding-top:30px; padding-left:15px; padding-right:15px; margin-top:20px; border-radius: 50%; font-size: 25px; font-weight:bold; color: #fff; text-align: center; background: #999;'>-->
+
+        <!--        </div></center>-->
+        <!--        <center><h1 id="d_name" style="font-size:35px; color:#4e8bba;"></h1></center>-->
+        <!--        <div style="width:100%;">-->
+        <!--            <button data-icon="phone" style="width:45%; float:left; margin-right:5%;" data-theme="b">Call</button>-->
+        <!--            <button data-icon="comment" style="width:45%; float:right;" data-theme="b">Message</button>-->
+        <!--        </div>-->
+        <!--        <br>-->
+        <div style="margin-left:5%; margin-right:5%;">
+            <p>Property Type</p>
+            <b><p id="showptype"></p></b>
+            <hr>
+            <p>Number of bedrooms</p>
+            <b><p id="showpbedroom"></p></b>
+            <hr>
+            <p>Uploaded Date and Time</p>
+            <b><p id="showpdatetime"></p></b>
+            <hr>
+            <p>Monthly Rental Price</p>
+            <b><p id="showpprice"></p></b>
+            <hr>
+            <p>Furniture Type</p>
+            <b><p id="showpftype"></p></b>
+            <hr>
+            <p>Address</p>
+            <b><p id="showpaddress"></p></b>
+            <button onclick="viewInMap()">View in map</button>
+            <hr>
+            <p>Note</p>
+            <b><p id="showpnote"></p></b>
+            <hr>
+            <p>Reporter Name</p>
+            <b><p id="showprepname"></p></b>
+            <hr>
+            <p>Reporter Phone</p>
+            <b><p id="showprepphone"></p></b>
+            <hr>
+        </div>
+
+
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
